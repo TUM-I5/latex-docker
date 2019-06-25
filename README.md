@@ -7,6 +7,7 @@ This docker image aims to be the universal Docker Image for LaTeX projects.
 * **gnuplot**
 * **.dot** processing via graphviz
 * **latexmk**
+* **pandoc**
 * **minted** codehighlighting via python-pygments and python3
 * **Extended TexLive** via texlive, texlive-latex-extra, texlive-generic-extra and texlive-science
 * German language support via texlive-lang-german
