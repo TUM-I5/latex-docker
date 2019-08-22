@@ -7,8 +7,9 @@ RUN apt-get update -q -y && apt-get install -q -y --no-install-recommends \
         latexmk \
         lmodern \
         pandoc \
-        python-pygments \
         python3 \
+        python3-pip \
+        python3-pygments \
         texlive \
         texlive-generic-extra \
         texlive-lang-german \
