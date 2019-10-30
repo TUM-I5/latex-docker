@@ -17,3 +17,4 @@ RUN apt-get update -q -y && apt-get install -q -y --no-install-recommends \
         texlive-fonts-extra \
         texlive-science \
         && rm -rf /var/lib/apt/lists/*
+COPY bin/* /usr/local/bin/
