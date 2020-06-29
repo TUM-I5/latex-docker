@@ -16,5 +16,7 @@ RUN apt-get update -q -y && apt-get install -q -y --no-install-recommends \
         texlive-latex-extra \
         texlive-fonts-extra \
         texlive-science \
+        texlive-bibtex-extra \
+        biber
         && rm -rf /var/lib/apt/lists/*
 COPY bin/* /usr/local/bin/
