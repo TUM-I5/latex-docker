@@ -18,6 +18,7 @@ RUN apt-get update -q -y && \
         texlive-lang-german \
         texlive-latex-extra \
         texlive-science \
+        texlive-publishers \
         texlive-xetex \
         && rm -rf /var/lib/apt/lists/*
 COPY bin/* /usr/local/bin/
