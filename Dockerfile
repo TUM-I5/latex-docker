@@ -1,5 +1,8 @@
-FROM ubuntu:18.04
-RUN apt-get update -q -y && apt-get install -q -y --no-install-recommends \
+FROM ubuntu:20.04
+COPY ubuntu/inittimezone /usr/local/bin/inittimezone
+RUN apt-get update -q -y && \
+    inittimezone && \
+    apt-get install -q -y --no-install-recommends \
         build-essential \
         fonts-font-awesome \
         gnuplot \
@@ -11,12 +14,12 @@ RUN apt-get update -q -y && apt-get install -q -y --no-install-recommends \
         python3-pip \
         python3-pygments \
         texlive \
-        texlive-generic-extra \
+        texlive-fonts-recommended \
         texlive-lang-german \
         texlive-latex-extra \
-        texlive-fonts-extra \
         texlive-science \
         texlive-bibtex-extra \
-        biber
+        texlive-publishers \
+        texlive-xetex \
         && rm -rf /var/lib/apt/lists/*
 COPY bin/* /usr/local/bin/
